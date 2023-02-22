@@ -1,5 +1,6 @@
 from keras.datasets import imdb
-import  numpy as np
+import numpy as np
+
 
 def load_data(num_words=2000):
     """Load the IMDb movie review dataset and preprocess it."""
@@ -14,6 +15,7 @@ def load_data(num_words=2000):
     y_test = test_labels.astype('float32')
 
     return X_train, y_train, X_test, y_test
+
 
 def vectorize_sequences(sequences, dimension=2000):
     """Convert the reviews to a matrix."""
