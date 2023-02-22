@@ -1,9 +1,8 @@
-from dash.dependencies import Input, Output, State
+from dash.dependencies import Input, Output
 from dash.exceptions import PreventUpdate
-import dash_html_components as html
-import dash_core_components as dcc
-from app import main
-#from models import
+
+from app import app
+
 
 def update_output(input1, input2):
     def callback_function(input1_value, input2_value):
@@ -45,18 +44,18 @@ def update_graph(input):
 '''
 
 # Register the callbacks with the app
-main.callback(
+app.callback(
     Output('output-component', 'children'),
     [Input('input1', 'value'),
      Input('input2', 'value')]
 )(update_output('input1', 'input2'))
 
-main.callback(
+app.callback(
     Output('alert-component', 'children'),
     [Input('input3', 'value')]
 )(trigger_alert('input3'))
 
-main.callback(
+app.callback(
     Output('graph-component', 'figure'),
     [Input('input4', 'value')]
 )(update_graph('input4'))
