@@ -1,21 +1,28 @@
 body {
-  background-color:#FFF2CC;
+  background-color:#F3F3F7;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
+  color: black;
 }
 /********************* TEXT *********************/
 h1 {
   margin-top: 50px;
   text-transform: uppercase;
-  font-size: 20px;
-  color: white;
+  font-size: 16px;
+  color: black;
   text-align: center;
   white-space: normal;
 }
-p {
+.first-paragraph {
   margin-left: 20px;
+  font-size: 24px;
   color: white;
+}
+.second-paragraph {
+  margin-left: 20px;
+  font-size: 18px;
+  color: black;
 }
 .dropdown-labels {
   margin-left: 20px;
@@ -24,7 +31,7 @@ p {
 }
 .other-labels {
   margin-left: 20px;
-  color: #FFBD59;
+  color: #3BA27A;
   font-weight: bold;
 }
 /********************* SECTIONS *********************/
@@ -33,29 +40,14 @@ p {
   overflow: hidden;
 }
 #left-container {
-  height: 937px;
-  width: 350px;
+  height: 1200px;
+  width: 400px;
   background-color:#3BA27A;
   float: left;
   margin: 20px;
 }
 #right-container {
   margin-left: 340px;
-}
-#table {
-  height: 420px;
-  width: 800px;
-  float: left;
-  margin-left: 35px;
-  margin-top: 15px;
-}
-#table-side {
-  width: 400px;
-  margin-left: 900px;
-  margin-top: 60px;
-  background-color: white;
-  border-radius: 10px;
-  padding: 20px;
 }
 /********************* BUTTONS *********************/
 #update-button {
@@ -119,4 +111,15 @@ p {
 .card {
   width: 100px;
   height: 100px;
+}
+.graph-model {
+  width: 80%;
+  height: 300px;
+  margin: auto;
+}
+#my-image {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
 }

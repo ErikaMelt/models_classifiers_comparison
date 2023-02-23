@@ -1,10 +1,11 @@
 import plotly.graph_objects as go
 import plotly.graph_objs as go
+from dash import dcc
 from sklearn.metrics import roc_curve, auc
 import numpy as np
 
 
-def plot_heap_map(cm):
+def plot_heat_map(cm):
     # Calculate False Positive Rate (FPR) and True Positive Rate (TPR)
     fpr = cm[0, 1] / np.sum(cm[0, :])
     tpr = cm[1, 1] / np.sum(cm[1, :])
@@ -66,3 +67,11 @@ def plot_ROC_Curve(y_test, y_pred_prob):
     plot_dict = {'data': [trace], 'layout': layout}
 
     return plot_dict
+
+
+def plot_graph(num_positive, num_negative):
+    graph = go.Figure(
+        data=[go.Bar(x=['Positive', 'Negative'], y=[num_positive, num_negative])],
+        layout=go.Layout(title='Number of Positive and Negative Reviews'))
+
+    return graph
