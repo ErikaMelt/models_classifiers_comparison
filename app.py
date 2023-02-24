@@ -105,7 +105,7 @@ def display_results(results):
             ], className='row mb-4'),
         ])
     else:
-        return html.Div("Please select a model to get the metrics")
+        return html.Div("")
 
 
 if __name__ == '__main__':

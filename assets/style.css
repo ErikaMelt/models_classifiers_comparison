@@ -8,7 +8,6 @@ body {
 /********************* TEXT *********************/
 h1 {
   margin-top: 50px;
-  text-transform: uppercase;
   font-size: 16px;
   color: black;
   text-align: center;
@@ -113,8 +112,8 @@ h1 {
   height: 100px;
 }
 .graph-model {
-  width: 80%;
-  height: 300px;
+  width: 50%;
+  height: 200px;
   margin: auto;
 }
 #my-image {
