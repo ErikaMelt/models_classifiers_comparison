@@ -93,10 +93,12 @@ def display_results(results):
         return html.Div([
             html.Div([
                 html.Div(cards, className='d-flex flex-wrap justify-content-center align-items-center mb-4'),
-                html.Div(
+                html.Div([
                     dcc.Graph(id="roc", figure={'data': results['roc']['data'], 'layout': results['roc']['layout']}),
+                ], className='col-md-6'),
+                html.Div([
                     dcc.Graph(id="cm", figure={'data': results['cm']['data'], 'layout': results['cm']['layout']}),
-                            className="graph-container"),
+                ], className='col-md-6'),
             ], className='row mb-4'),
         ])
     else:
