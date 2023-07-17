@@ -6,41 +6,19 @@ import numpy as np
 
 
 def plot_heat_map(cm):
-    # Calculate False Positive Rate (FPR) and True Positive Rate (TPR)
-    fpr = cm[0, 1] / np.sum(cm[0, :])
-    tpr = cm[1, 1] / np.sum(cm[1, :])
-
     # Create heatmap figure with annotations
     heatmap = go.Figure(data=go.Heatmap(
         z=cm,
         x=['Predicted Negative', 'Predicted Positive'],
         y=['Actual Negative', 'Actual Positive'],
         colorscale='Blues',
+        text=cm,
+        hoverinfo='text',
         colorbar=dict(title='Count')
     ))
 
-    # Add annotations for FPR and TPR
-    annotations = [
-        go.layout.Annotation(
-            x=0.5,
-            y=-0.15,
-            text=f'FPRate: {fpr:.2f}',
-            showarrow=False,
-            font=dict(size=14)
-        ),
-        go.layout.Annotation(
-            x=-0.15,
-            y=0.5,
-            text=f'TPR: {tpr:.2f}',
-            showarrow=False,
-            font=dict(size=14),
-            textangle=-90
-        )
-    ]
-
     heatmap.update_layout(
         title='Confusion Matrix',
-        annotations=annotations,
         xaxis=dict(title='Predicted label'),
         yaxis=dict(title='True label')
     )

@@ -53,7 +53,7 @@ app.layout = html.Div([
                         html.Div(id='output-div')
                     ]
                 )
-            ], className='row', style={'padding-top': '300px'}),
+            ], className='row', style={'padding-top': '150px'}),
         ]),
     ], id='right-container', className='col-md-8')
 ], id='container', className='container-fluid')
