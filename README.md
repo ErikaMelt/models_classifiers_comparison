@@ -9,7 +9,6 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-[![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
@@ -77,8 +76,6 @@ This project utilizes Dash, an interactive dashboard framework, to compare class
 This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
 * [![Keras](https://img.shields.io/badge/Keras-v2.6.0-red)][keras-url]
-* [![React][React.js]][React-url]
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -128,8 +125,6 @@ Use this space to list resources you find helpful and would like to give credit 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
@@ -137,6 +132,6 @@ Use this space to list resources you find helpful and would like to give credit 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/othneildrew
 [product-screenshot]: images/screenshot.png
-[![Keras](https://img.shields.io/badge/Keras-v2.6.0-red)][keras-url]
+[Keras](https://img.shields.io/badge/Keras-v2.6.0-red)][keras-url]
 [keras-url]: https://keras.io/
 
