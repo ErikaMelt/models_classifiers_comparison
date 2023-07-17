@@ -28,8 +28,7 @@ app.layout = html.Div([
     html.Div([
          html.Img(id="my-image", src=img_url),
          html.P(
-             'You can choose one model from the list and evaluate its performance using metrics such as accuracy, '
-             'recall, confusion matrix, and ROC.', className='first-paragraph'),
+             'Select a model from the list to assess its performance using key metrics including accuracy, recall, confusion matrix, and ROC Curve', className='first-paragraph'),
          html.Label("Select Model", className='dropdown-labels'),
          dcc.Dropdown(
              id='class-dropdown',
@@ -45,7 +44,7 @@ app.layout = html.Div([
             html.H1("Movie Review Classification with Machine Learning", className='display-4 mb-4'),
             html.P(
                 'This project involves a comparative analysis of three machine learning classification algorithms: logistic regression, random forest, and Naive Bayes. The analysis is performed on the IMDB Movies review dataset obtained from Keras, with the goal of accurately classifying reviews as positive or negative. By thoroughly examining the performance of each algorithm, the study aims to determine the most effective approach for sentiment classification in the context of movie reviews.'         , className='second-paragraph'),
-            html.Div(children=[graph], className="graph-model", style={'padding-bottom': '200px'}),
+            html.Div(children=[graph], className="graph-model", style={'padding-bottom': '400px'}),
             html.Div([
                 dcc.Loading(
                     id="loading",
@@ -54,7 +53,7 @@ app.layout = html.Div([
                         html.Div(id='output-div')
                     ]
                 )
-            ], className='row', style={'padding-top': '200px'}),
+            ], className='row', style={'padding-top': '300px'}),
         ]),
     ], id='right-container', className='col-md-8')
 ], id='container', className='container-fluid')
@@ -96,10 +95,8 @@ def display_results(results):
                 html.Div(cards, className='d-flex flex-wrap justify-content-center align-items-center mb-4'),
                 html.Div(
                     dcc.Graph(id="roc", figure={'data': results['roc']['data'], 'layout': results['roc']['layout']}),
-                    className="graph-container"),
-                html.Div(
                     dcc.Graph(id="cm", figure={'data': results['cm']['data'], 'layout': results['cm']['layout']}),
-                    className="graph-container")
+                            className="graph-container"),
             ], className='row mb-4'),
         ])
     else:
