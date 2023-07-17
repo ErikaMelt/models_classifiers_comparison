@@ -13,7 +13,6 @@ def plot_heat_map(cm):
         y=['Actual Negative', 'Actual Positive'],
         colorscale='Blues',
         text=cm,
-        hoverinfo='text',
         colorbar=dict(title='Count')
     ))
 
@@ -22,6 +21,8 @@ def plot_heat_map(cm):
         xaxis=dict(title='Predicted label'),
         yaxis=dict(title='True label')
     )
+
+    heatmap.update_traces(textfont=dict(color='black', size=12), hoverinfo='text')
 
     # create dictionary with plotly figure and layout
     plot_dict = {'data': heatmap.data, 'layout': heatmap.layout}
@@ -49,7 +50,7 @@ def plot_ROC_Curve(y_test, y_pred_prob):
 
 def plot_graph(num_positive, num_negative):
     graph = go.Figure(
-        data=[go.Bar(x=['Positive', 'Negative'], y=[num_positive, num_negative])],
+        data=[go.Bar(x=['Positive', 'Negative'], y=[num_positive, num_negative], marker=dict(color='#4170A6'))],
         layout=go.Layout(title='Number of Positive and Negative Reviews'))
 
     return graph

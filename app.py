@@ -28,7 +28,7 @@ app.layout = html.Div([
     html.Div([
          html.Img(id="my-image", src=img_url),
          html.P(
-             'Select a model from the list to assess its performance using key metrics including accuracy, recall, confusion matrix, and ROC Curve', className='first-paragraph'),
+             'Select a model from the list to assess its performance using key metrics including accuracy, recall, confusion matrix, and ROC Curve', className='second-paragraph'),
          html.Label("Select Model", className='dropdown-labels'),
          dcc.Dropdown(
              id='class-dropdown',
@@ -43,7 +43,7 @@ app.layout = html.Div([
         html.Div([
             html.H1("Movie Review Classification with Machine Learning", className='display-4 mb-4'),
             html.P(
-                'This project involves a comparative analysis of three machine learning classification algorithms: logistic regression, random forest, and Naive Bayes. The analysis is performed on the IMDB Movies review dataset obtained from Keras, with the goal of accurately classifying reviews as positive or negative. By thoroughly examining the performance of each algorithm, the study aims to determine the most effective approach for sentiment classification in the context of movie reviews.'         , className='second-paragraph'),
+                'This project involves a comparative analysis of three machine learning classification algorithms: logistic regression, random forest, and Naive Bayes. The analysis is performed on the IMDB Movies review dataset obtained from Keras, with the goal of accurately classifying reviews as positive or negative. By thoroughly examining the performance of each algorithm, the study aims to determine the most effective approach for sentiment classification in the context of movie reviews.', className='first-paragraph'),
             html.Div(children=[graph], className="graph-model", style={'padding-bottom': '400px'}),
             html.Div([
                 dcc.Loading(

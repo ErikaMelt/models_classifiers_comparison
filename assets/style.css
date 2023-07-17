@@ -1,11 +1,11 @@
 body {
-  background-color:#F3F3F7;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #F3F3F7;
+  font-family: 'Roboto', sans-serif; /* Updated font */
   margin: 0;
   padding: 0;
   color: black;
 }
-/********************* TEXT *********************/
+
 h1 {
   margin-top: 50px;
   font-size: 16px;
@@ -13,109 +13,133 @@ h1 {
   text-align: center;
   white-space: normal;
 }
+
 .first-paragraph {
+  margin-top: 20px;
+  margin-bottom: 20px;
   margin-left: 20px;
   font-size: 24px;
-  color: white;
+  color: lightslategray;
 }
+
 .second-paragraph {
+  margin-top: 20px;
+  margin-bottom: 20px;
   margin-left: 20px;
   font-size: 18px;
-  color: black;
+  color: whitesmoke;
 }
+
 .dropdown-labels {
   margin-left: 20px;
   color: white;
   font-weight: bold;
 }
+
 .other-labels {
   margin-left: 20px;
   color: #3BA27A;
   font-weight: bold;
 }
-/********************* SECTIONS *********************/
+
 #container {
   width: 100%;
   overflow: hidden;
 }
+
 #left-container {
-  height: 1200px;
+  height: 1800px;
   width: 400px;
-  background-color:#3BA27A;
+  background-color: #7D53A4;
   float: left;
   margin: 20px;
 }
+
 #right-container {
   margin-left: 340px;
 }
-/********************* BUTTONS *********************/
+
 #update-button {
+  display: block;
+  margin: 0 auto;
   width: 240px;
   height: 40px;
   border-radius: 5px;
-  margin-left: 38px;
-  margin-top: 30px;
   border: 0px;
   cursor: pointer;
-  background-color: black;
-  color: white;
+  background-color: #FFBD59;
+  color: black;
   font-weight: bold;
   font-family: inherit;
   text-transform: uppercase;
   font-size: 15px;
 }
+
 #update-button:hover {
-  background-color: #FFBD59;
-  color: white;
+  background-color: #FFD082;
+  color: black;
 }
-/********************* DROPDOWNS *********************/
+
 .dropdown {
   margin-left: 20px;
   margin-right: 20px;
   margin-top: 5px;
 }
-.dropdown .Select-control{
+
+.dropdown .Select-control {
   background-color: white;
 }
-.dropdown .Select-menu-outer{
+
+.dropdown .Select-menu-outer {
   background-color: white;
 }
-.dropdown .Select-value{
-  background-color: #3BA27A;
+
+.dropdown .Select-value {
+  background-color: whitesmoke;
   color: white;
   font-size: 14px;
 }
+
 .dropdown .VirtualizedSelectFocusedOption {
   background-color: #a5ecd1;
   color: black;
 }
-.dropdown .VirtualizedSelectOption  {
+
+.dropdown .VirtualizedSelectOption {
   font-size: 14px;
 }
+
 .card-value {
-    color: red
+  color: #4170A6;
+  font-size: 16px;
 }
+
 .card-body {
-    background-color: transparent;
-    padding: 0.5rem;
+  background-color: transparent;
+  padding: 0.5rem;
 }
+
 .graph-container {
   width: 80%;
   height: 500px;
   margin: auto;
 }
+
 .card-title {
   text-align: center;
 }
+
 .card {
   width: 100px;
   height: 100px;
 }
+
 .graph-model {
   width: 50%;
   height: 200px;
   margin: auto;
 }
+
 #my-image {
   display: block;
   margin: 0 auto;
