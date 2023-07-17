@@ -44,12 +44,8 @@ app.layout = html.Div([
         html.Div([
             html.H1("Movie Review Classification with Machine Learning", className='display-4 mb-4'),
             html.P(
-                'In this project, you will compare the performance of three machine learning classification '
-                'algorithms: logistic regression, random forest, and Naive Bayes. You will use the IMDB Movies review '
-                'dataset from Keras to classify reviews as positive or negative. By analyzing the results of '
-                'each algorithm, you can identify which one provides the most accurate classification performance '
-                'for this task.', className='second-paragraph'),
-            html.Div(children=[graph], className="graph-model"),
+                'This project involves a comparative analysis of three machine learning classification algorithms: logistic regression, random forest, and Naive Bayes. The analysis is performed on the IMDB Movies review dataset obtained from Keras, with the goal of accurately classifying reviews as positive or negative. By thoroughly examining the performance of each algorithm, the study aims to determine the most effective approach for sentiment classification in the context of movie reviews.'         , className='second-paragraph'),
+            html.Div(children=[graph], className="graph-model", style={'padding-bottom': '200px'}),
             html.Div([
                 dcc.Loading(
                     id="loading",
@@ -58,10 +54,11 @@ app.layout = html.Div([
                         html.Div(id='output-div')
                     ]
                 )
-            ], className='row'),
+            ], className='row', style={'padding-top': '200px'}),
         ]),
     ], id='right-container', className='col-md-8')
 ], id='container', className='container-fluid')
+
 
 app.callback(
     Output(component_id='results-store', component_property='data'),
@@ -84,8 +81,9 @@ def display_results(results):
                     [
                         dbc.CardBody(
                             [
-                                html.H5(key.capitalize(), className="card-title"),
-                                html.P(f"{value:.2f}", className="card-value"),
+                                    html.H5(key.capitalize(), className="card-title", style={"text-align": "center"}),
+                                    html.P(f"{value:.2f}", className="card-value", style={"text-align": "center"})
+
                             ],
                             className="card-body"
                         )
