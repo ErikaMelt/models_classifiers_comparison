@@ -73,7 +73,7 @@ This project utilizes Dash, an interactive dashboard framework, to compare class
 This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
 * [![Keras](https://img.shields.io/badge/Keras-v2.6.0-red)][keras-url]
-* ![Dash](https://img.shields.io/badge/Dash-v2.11.1-blue)[Dash-url]
+* ![Dash](https://img.shields.io/badge/Dash-v2.11.1-blue)][Dash-url]
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -129,7 +129,7 @@ Use this space to list resources you find helpful and would like to give credit 
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
 [license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
+[linkedin-url]: https://linkedin.com/in/erikapaolaortiz
 [product-screenshot]: images/screenshot.png
 [keras-url]: https://keras.io/
 [Dash-url]: https://dash.plotly.com/installation
