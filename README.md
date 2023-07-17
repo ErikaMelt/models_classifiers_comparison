@@ -19,10 +19,10 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Best-README-Template</h3>
+  <h3 align="center">Exploring Classifiers for IMDb Movie Reviews using Dash</h3>
 
   <p align="center">
-    Exploring Classifiers for IMDb Movie Reviews using Dash
+    This project utilizes Dash, an interactive dashboard framework, to compare classifiers for sentiment analysis on IMDb movie reviews. It evaluates and contrasts the performance of various models.
     <br />
     <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
     <br />
@@ -73,6 +73,8 @@ This project utilizes Dash, an interactive dashboard framework, to compare class
 This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
 * [![Keras](https://img.shields.io/badge/Keras-v2.6.0-red)][keras-url]
+* ![Dash](https://img.shields.io/badge/Dash-v2.11.1-blue)[Dash-url]
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -130,5 +132,5 @@ Use this space to list resources you find helpful and would like to give credit 
 [linkedin-url]: https://linkedin.com/in/othneildrew
 [product-screenshot]: images/screenshot.png
 [keras-url]: https://keras.io/
-
+[Dash-url]: https://dash.plotly.com/installation
 
